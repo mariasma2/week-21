@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/cats.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Информация о Вашем котике  </h1>
+
+    <fieldset class="about_people">
+        <legend> Давай познакомимся </legend>
+
+        <div>
+            <label for="fio"> Имя владельца </label>
+            <input type="text" id="fio" name="fio" placeholder="Имя владельца" required />
+        </div>
+        <div>
+            <label for="telefon"> Номер телефона </label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Телефон" pattern="\+\d{11}" minlength="11"
+                maxlength="12" /></div>
+        <div>
+        </div>
+    </fieldset>
+    <fieldset class="about_cat">
+        <legend> Информация о котике </legend>
+        <div>
+            <label for="name"> Кличка питомца </label>
+            <input type="text" id="name" name="name" placeholder="Кличка питомца" required />
+        </div>
+        <div>
+            <label for="breed"> Порода вашего питомца: </label><br />
+            <select id="breed">
+                <option value="first option"> Мейн-кун</option>
+                <option value="second option"> Абиссинская кошка</option>
+                <option value="third option"> Бурма</option>
+                <option value="fourth option"> Девон Рекс </option>
+                <option value="fifth option"> Другая </option>
+            </select>
+        </div>
+    
+
+    <div>
+        <label for="eat"> Чем питается? </label><br />
+        <input type="checkbox" id="eat"> Сухой корм </input><br />
+        <input type="checkbox" id="eat"> Влажный корм </input><br />
+        <input type="checkbox" id="eat"> Натуральный корм </input><br />
+    </div>
+
+
+    <div>
+        <label for="sex"> Пол вашего питомца </label><br />
+        Самка <input type="radio" name="sex" /> <br /> Самец <input type="radio" name="sex" />
+    </div>
+
+
+    <div>
+        <label for="comments">Комментарии:</label> <br />
+        <textarea name="comments" id="comments" rows="10"
+            cols="30"> Если вы хотите рассказать что-то важное о вашем котике, пишите здесь</textarea>
+    </div>
+</fieldset>
+
+    <div>
+        <label for="foto"> Загрузите фото вашего питомца </label>
+        <input type="file" id="foto" name="foto" required />
+    </div>
+
+    <button type="button" id="button"> Сохранить </button>
+    <script src="/src/scripts/cats.js"></script>
+</body>
+
+</html>
